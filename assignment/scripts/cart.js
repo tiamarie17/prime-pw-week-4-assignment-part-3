@@ -6,8 +6,8 @@ let basket = [];
 console.log(basket);
 
 function addItem(item) {
-    basket += item + '\n';
-    return true;   
+    basket.push(item);
+        return true;   
 }
 
 console.log(`Basket is ${basket}`);
@@ -19,12 +19,12 @@ console.log('Adding socks (expect true)', addItem('socks'));
 console.log(`Basket is now ${basket}`);
 
 
-function listItems(array){
+ function listItems(array){
     for(let i=0; i < array.length; i++){
-        return array;
-    }
+     console.log(array[i] );
+ }      
 }
-console.log('Listing items in basket array on a new line: \n' + listItems(basket));
+listItems(basket);
 
 
 
